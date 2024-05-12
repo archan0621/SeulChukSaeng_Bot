@@ -19,7 +19,7 @@ public class SeulchukbotApplication {
 		String token = context.getEnvironment().getProperty("discord.token");
 		SeulchukListener listener = context.getBean(SeulchukListener.class);
 		JDABuilder.createDefault(token)
-				.setActivity(Activity.customStatus("민혜랑 현피 뜨는 중"))
+				.setActivity(Activity.customStatus("열심히 개발되는 중"))
 				.enableIntents(GatewayIntent.MESSAGE_CONTENT)
 				.addEventListeners(listener)
 				.build();
